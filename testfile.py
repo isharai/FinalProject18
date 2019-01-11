@@ -10,16 +10,17 @@ white = 255, 255, 255
 
 screen = pygame.display.set_mode(size)
 
-Class Player:
+class Player:
 # creates player and contains information on qualities
-def __init__(self, name, speed, size)
-    x = 5
-    y = 10
-    speed = 2
+    def __init__(self, name, speed)
+        self.name = name
+        self.speed = speed
+    
+        speed = 2
 
-    is jump = 0
+        is jump = 0
 
-    Def moveRight(self):
+        Def moveRight(self):
 
 
 
