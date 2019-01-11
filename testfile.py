@@ -10,7 +10,19 @@ white = 255, 255, 255
 
 screen = pygame.display.set_mode(size)
 
-Class Player
+Class Player:
+# creates player and contains information on qualities
+def __init__(self, name, speed, size)
+    x = 5
+    y = 10
+    speed = 2
+
+    is jump = 0
+
+    Def moveRight(self):
+
+
+
 loadghost = pygame.image.load("ghost.png")
 ghost = pygame.Surface.convert_alpha(loadghost)
 ghostrect = ghost.get_rect()
