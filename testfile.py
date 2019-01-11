@@ -5,31 +5,43 @@ pygame.init()
 f = 1/2 * m * v^2
 
 size = width, height = 1000, 500
-speed = [2, 2]
 white = 255, 255, 255
 
 screen = pygame.display.set_mode(size)
 
+x = 0
+y = 0
+velx =1
+vely = 0
+accy = .1
+jumping = False
+
 class Player:
 # creates player and contains information on qualities
-    def __init__(self, name, speed)
+    def __init__(self, name, speed, filename):
         self.name = name
         self.speed = speed
-    
-        speed = 2
+        self.filename = filename
 
-        is jump = 0
+        def moveRight(self, name, speed, file):
+            
 
-        Def moveRight(self):
 
 
 
 loadghost = pygame.image.load("ghost.png")
-ghost = pygame.Surface.convert_alpha(loadghost)
-ghostrect = ghost.get_rect()
+ghostfile = pygame.Surface.convert_alpha(loadghost)
+loaddino = pygame.image.load("dino.png")
+dinofile = pygame.Surface.convert_alpha(loaddino)
+ghost = Player('ghost', 2, ghostfile)
+dino = Player('dino', 2, dinofile)
+ghostrect = ghostfile.get_rect()
+dinorect = dinofile.get_rect()
 
-while 1:
+while True:
+
     if pygame.key.pygame.key.get_pressed(K_SPACE):
+
 
 
     for event in pygame.key.get_pressed(K_SPACE):
